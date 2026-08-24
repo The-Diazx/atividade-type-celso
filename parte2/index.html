@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Peso Ideal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Peso Ideal</h1>
+
+        <form id="formPeso">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" required>
+                <option value="">Selecione</option>
+                <option value="M">Homem</option>
+                <option value="F">Mulher</option>
+            </select>
+
+            <label for="altura">Altura em metros:</label>
+            <input type="number"
+                   id="altura"
+                   step="0.01"
+                   placeholder="Ex.: 1.75"
+                   required>
+
+            <div class="botoes">
+                <button type="submit" id="btnCalcular">Calcular peso ideal</button>
+                <button type="button" id="btnLimpar" class="btn-secundario">Limpar</button>
+            </div>
+        </form>
+
+        <div id="resultado">
+            Preencha os dados e clique em calcular.
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
